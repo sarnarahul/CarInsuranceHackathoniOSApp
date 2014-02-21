@@ -17,7 +17,7 @@
         <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="vin" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="yearOfMake" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="yearOfMake" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="carsOwn" inverseEntity="Customer" syncable="YES"/>
     </entity>
     <elements>

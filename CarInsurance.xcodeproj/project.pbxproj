@@ -25,11 +25,14 @@
 		16FCC07918B79C72000E72D2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FCC07818B79C72000E72D2 /* Storyboard.storyboard */; };
 		16FCC07C18B79E4B000E72D2 /* CustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC07B18B79E4B000E72D2 /* CustomerViewController.m */; };
 		16FCC07F18B7A24F000E72D2 /* VehicleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC07E18B7A24F000E72D2 /* VehicleCell.m */; };
-		16FCC08518B7A580000E72D2 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC08418B7A580000E72D2 /* Vehicle.m */; };
 		16FCC08818B7A65D000E72D2 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC08718B7A65D000E72D2 /* CoreDataHelper.m */; };
 		16FCC08C18B7A82C000E72D2 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC08B18B7A82C000E72D2 /* Customer.m */; };
 		16FCC08F18B7AA3F000E72D2 /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC08E18B7AA3F000E72D2 /* AddCustomerViewController.m */; };
 		16FCC09218B7AE06000E72D2 /* AddVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC09118B7AE06000E72D2 /* AddVehicleViewController.m */; };
+		16FCC09518B7B0B5000E72D2 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCC09418B7B0B5000E72D2 /* Vehicle.m */; };
+		16FCC09818B7B12F000E72D2 /* defaultAddImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FCC09718B7B12F000E72D2 /* defaultAddImage.png */; };
+		16FCC09A18B7C7B5000E72D2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCC09918B7C7B5000E72D2 /* AssetsLibrary.framework */; };
+		16FCC09C18B7CA09000E72D2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCC09B18B7CA09000E72D2 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +69,6 @@
 		16FCC07B18B79E4B000E72D2 /* CustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerViewController.m; sourceTree = "<group>"; };
 		16FCC07D18B7A24F000E72D2 /* VehicleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleCell.h; sourceTree = "<group>"; };
 		16FCC07E18B7A24F000E72D2 /* VehicleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleCell.m; sourceTree = "<group>"; };
-		16FCC08318B7A580000E72D2 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
-		16FCC08418B7A580000E72D2 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		16FCC08618B7A65D000E72D2 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		16FCC08718B7A65D000E72D2 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		16FCC08A18B7A82C000E72D2 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
@@ -76,6 +77,11 @@
 		16FCC08E18B7AA3F000E72D2 /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		16FCC09018B7AE06000E72D2 /* AddVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddVehicleViewController.h; sourceTree = "<group>"; };
 		16FCC09118B7AE06000E72D2 /* AddVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVehicleViewController.m; sourceTree = "<group>"; };
+		16FCC09318B7B0B5000E72D2 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		16FCC09418B7B0B5000E72D2 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		16FCC09718B7B12F000E72D2 /* defaultAddImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultAddImage.png; sourceTree = "<group>"; };
+		16FCC09918B7C7B5000E72D2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		16FCC09B18B7CA09000E72D2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FCC09C18B7CA09000E72D2 /* MobileCoreServices.framework in Frameworks */,
+				16FCC09A18B7C7B5000E72D2 /* AssetsLibrary.framework in Frameworks */,
 				16FCC04618B79C53000E72D2 /* CoreGraphics.framework in Frameworks */,
 				16FCC04A18B79C53000E72D2 /* CoreData.framework in Frameworks */,
 				16FCC04818B79C53000E72D2 /* UIKit.framework in Frameworks */,
@@ -126,6 +134,8 @@
 		16FCC04218B79C53000E72D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16FCC09B18B7CA09000E72D2 /* MobileCoreServices.framework */,
+				16FCC09918B7C7B5000E72D2 /* AssetsLibrary.framework */,
 				16FCC04318B79C53000E72D2 /* Foundation.framework */,
 				16FCC04518B79C53000E72D2 /* CoreGraphics.framework */,
 				16FCC04718B79C53000E72D2 /* UIKit.framework */,
@@ -138,6 +148,7 @@
 		16FCC04B18B79C53000E72D2 /* CarInsurance */ = {
 			isa = PBXGroup;
 			children = (
+				16FCC09618B7B123000E72D2 /* Resources */,
 				16FCC08918B7A66C000E72D2 /* Database Helpers */,
 				16FCC05418B79C53000E72D2 /* AppDelegate.h */,
 				16FCC05518B79C53000E72D2 /* AppDelegate.m */,
@@ -146,10 +157,10 @@
 				16FCC07E18B7A24F000E72D2 /* VehicleCell.m */,
 				16FCC05A18B79C53000E72D2 /* Images.xcassets */,
 				16FCC05718B79C53000E72D2 /* CarInsurance.xcdatamodeld */,
+				16FCC09318B7B0B5000E72D2 /* Vehicle.h */,
+				16FCC09418B7B0B5000E72D2 /* Vehicle.m */,
 				16FCC08A18B7A82C000E72D2 /* Customer.h */,
 				16FCC08B18B7A82C000E72D2 /* Customer.m */,
-				16FCC08318B7A580000E72D2 /* Vehicle.h */,
-				16FCC08418B7A580000E72D2 /* Vehicle.m */,
 				16FCC07A18B79E4B000E72D2 /* CustomerViewController.h */,
 				16FCC07B18B79E4B000E72D2 /* CustomerViewController.m */,
 				16FCC08D18B7AA3F000E72D2 /* AddCustomerViewController.h */,
@@ -197,6 +208,14 @@
 				16FCC08718B7A65D000E72D2 /* CoreDataHelper.m */,
 			);
 			name = "Database Helpers";
+			sourceTree = "<group>";
+		};
+		16FCC09618B7B123000E72D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16FCC09718B7B12F000E72D2 /* defaultAddImage.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FCC09818B7B12F000E72D2 /* defaultAddImage.png in Resources */,
 				16FCC05018B79C53000E72D2 /* InfoPlist.strings in Resources */,
 				16FCC05B18B79C53000E72D2 /* Images.xcassets in Resources */,
 				16FCC07918B79C72000E72D2 /* Storyboard.storyboard in Resources */,
@@ -298,8 +318,8 @@
 				16FCC07C18B79E4B000E72D2 /* CustomerViewController.m in Sources */,
 				16FCC07F18B7A24F000E72D2 /* VehicleCell.m in Sources */,
 				16FCC08F18B7AA3F000E72D2 /* AddCustomerViewController.m in Sources */,
-				16FCC08518B7A580000E72D2 /* Vehicle.m in Sources */,
 				16FCC05918B79C53000E72D2 /* CarInsurance.xcdatamodeld in Sources */,
+				16FCC09518B7B0B5000E72D2 /* Vehicle.m in Sources */,
 				16FCC09218B7AE06000E72D2 /* AddVehicleViewController.m in Sources */,
 				16FCC05618B79C53000E72D2 /* AppDelegate.m in Sources */,
 				16FCC08818B7A65D000E72D2 /* CoreDataHelper.m in Sources */,

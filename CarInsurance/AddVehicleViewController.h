@@ -7,7 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "Customer.h"
+#import "Vehicle.h"
+#import "CoreDataHelper.h"
+#import <AssetsLibrary/ALAssetsLibrary.h>
+#import "MobileCoreServices/MobileCoreServices.h"
 
-@interface AddVehicleViewController : UIViewController
+
+
+@interface AddVehicleViewController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet UIImageView *vehicleImageView;
+@property (strong, nonatomic) IBOutlet UITextField *vinTextField;
+@property (strong, nonatomic) IBOutlet UITextField *makeTextField;
+@property (strong, nonatomic) IBOutlet UITextField *modelTextField;
+@property (strong, nonatomic) IBOutlet UITextField *typeTextField;
+@property (strong, nonatomic) IBOutlet UITextField *yearOfMakeTextField;
+
+@property (strong, nonatomic) Customer *customer;
+
+
+
 
 @end

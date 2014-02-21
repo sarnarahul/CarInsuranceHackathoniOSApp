@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSString * make;
 @property (nonatomic, retain) NSString * model;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSNumber * yearOfMake;
+@property (nonatomic, retain) NSString * yearOfMake;
 @property (nonatomic, retain) NSData * picture;
 @property (nonatomic, retain) Customer *owner;
 

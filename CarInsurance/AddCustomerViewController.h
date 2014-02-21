@@ -11,8 +11,9 @@
 #import "Vehicle.h"
 #import "CoreDataHelper.h"
 #import "AppDelegate.h"
+#import "AddVehicleViewController.h"
 
-@interface AddCustomerViewController : UIViewController
+@interface AddCustomerViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
@@ -22,7 +23,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *policyCoverageTextField;
 @property (strong, nonatomic) IBOutlet UITextField *aaaMemberTextField;
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
+@property (strong, nonatomic) IBOutlet UITableView *carDisplayTable;
 
 
 @end

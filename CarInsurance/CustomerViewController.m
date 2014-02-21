@@ -20,7 +20,7 @@
 
 -(void) readDataForCustomerTable{
     
-    _allCustomers = [CoreDataHelper getObjectsForEntity:@"Customer" withSortKey:@"timeAdded" andSortAscending:YES andContext:[AppDelegate context]];
+    _allCustomers = [CoreDataHelper getObjectsForEntity:@"Customer" withSortKey:@"dateAdded" andSortAscending:YES andContext:[AppDelegate context]];
     
     [self.tableView reloadData];
     
@@ -49,6 +49,12 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    
+     [self readDataForCustomerTable];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,6 +98,7 @@
     }
     
 }
+
 
 /*
 // Override to support conditional editing of the table view.
