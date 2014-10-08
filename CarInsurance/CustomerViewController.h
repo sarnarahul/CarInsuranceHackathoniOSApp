@@ -11,6 +11,7 @@
 #import "Customer.h"
 #import "Vehicle.h"
 #import "CoreDataHelper.h"
+#import "AddCustomerViewController.h"
 
 @interface CustomerViewController : UITableViewController
 

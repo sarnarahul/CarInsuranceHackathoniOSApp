@@ -42,7 +42,9 @@
     
     [self readDataForCustomerTable];
     
-    self.title = [NSString stringWithFormat:@"Insurance Customer (%d)",_allCustomers.count];
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateTitle) userInfo:nil repeats:YES];
+    
+    self.title = [NSString stringWithFormat:@"Insurance Customer - %lu",(unsigned long)[_allCustomers count]];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -51,9 +53,18 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void) updateTitle{
+    
+    self.title = [NSString stringWithFormat:@"Insurance Customer - %lu",(unsigned long)[_allCustomers count]];
+
+}
+
+
 -(void) viewWillAppear:(BOOL)animated{
     
      [self readDataForCustomerTable];
+
+    self.title = [NSString stringWithFormat:@"Insurance Customer - %lu",(unsigned long)[_allCustomers count]];
     
 }
 
@@ -87,13 +98,23 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",[[_allCustomers objectAtIndex:indexPath.row] firstName],[[_allCustomers objectAtIndex:indexPath.row] lastName]];
     
     cell.detailTextLabel.text = [[_allCustomers objectAtIndex:indexPath.row] policyNo];
-                                     
+    
+    
+    
     return cell;
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    if([segue.identifier isEqualToString:@"addCustomer"]){
+    if([segue.identifier isEqualToString:@"editCustomer"]){
+        
+        AddCustomerViewController *acvc = (AddCustomerViewController *)segue.destinationViewController;
+        
+        acvc.customer = [_allCustomers objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+
+    }
+    else if([segue.identifier isEqualToString:@"addCustomer"]){
+        
         
     }
     
@@ -109,19 +130,35 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        
+        Customer *customerToDelete = [_allCustomers objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        
+        [[AppDelegate context] deleteObject:customerToDelete];
+        
+        [_allCustomers removeObjectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        self.title = [NSString stringWithFormat:@"Insurance Customer - %lu",(unsigned long)[_allCustomers count]];
+        
+        //[self.tableView reloadData];
+        
+        NSError *error = nil;
+        
+        if (![[AppDelegate context] save:&error])
+            NSLog(@"Failed cto save with error: %@", [error domain]);
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.

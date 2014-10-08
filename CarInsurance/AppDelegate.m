@@ -20,6 +20,11 @@
     return [(AppDelegate *)[UIApplication sharedApplication].delegate managedObjectContext];
 }
 
+//+(void) saveData{
+//    
+//    
+//}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

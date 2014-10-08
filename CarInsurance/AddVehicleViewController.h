@@ -27,7 +27,7 @@
 
 @property (strong, nonatomic) Customer *customer;
 
-
+@property (strong, nonatomic) Vehicle *vehicle;
 
 
 @end

@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *vehiclePicture;
 
-@property (strong, nonatomic) IBOutlet UILabel *carInfo;
+@property (strong, nonatomic) IBOutlet UILabel *vehicleInfo;
 
 @property (strong, nonatomic) IBOutlet UILabel *vehicleVIN;
 

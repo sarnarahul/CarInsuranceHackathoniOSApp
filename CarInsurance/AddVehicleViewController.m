@@ -32,7 +32,7 @@
     
     _vehicleImageView.image = [UIImage imageNamed:@"defaultAddImage.png"];
     
-//    _vehicleImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _vehicleImageView.contentMode = UIViewContentModeScaleToFill;
     
 //     self.clipsToBounds = YES;
     
@@ -51,6 +51,14 @@
     self.yearOfMakeTextField.delegate = self;
     
     
+    self.vinTextField.text = _vehicle.vin;
+    self.makeTextField.text = _vehicle.make;
+    self.modelTextField.text = _vehicle.model;
+    self.typeTextField.text = _vehicle.type;
+    self.yearOfMakeTextField.text = _vehicle.yearOfMake;
+    
+    if([UIImage imageWithData:_vehicle.picture] != nil)
+        self.vehicleImageView.image = [UIImage imageWithData:_vehicle.picture];
     
 }
 
@@ -134,28 +142,43 @@
         _vehicleImage = image;
         
     }
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
+
 
 - (IBAction)saveVehicleButton:(id)sender {
     
-    Vehicle *vehicle = [NSEntityDescription insertNewObjectForEntityForName:@"Vehicle" inManagedObjectContext:[AppDelegate context]];
+    if(!_vehicle){
+     _vehicle = [NSEntityDescription insertNewObjectForEntityForName:@"Vehicle" inManagedObjectContext:[AppDelegate context]];
+    }
     
-    [vehicle setVin:_vinTextField.text];
+    [_vehicle setVin:_vinTextField.text];
     
-    [vehicle setMake:_makeTextField.text];
+    [_vehicle setMake:_makeTextField.text];
     
-    [vehicle setModel:_modelTextField.text];
+    [_vehicle setModel:_modelTextField.text];
     
-    [vehicle setType:_typeTextField.text];
+    [_vehicle setType:_typeTextField.text];
     
-    [vehicle setYearOfMake:[_yearOfMakeTextField text]];
+    [_vehicle setYearOfMake:[_yearOfMakeTextField text]];
     
     NSData *imageData = UIImagePNGRepresentation(_vehicleImage);
     
-    [vehicle setPicture:imageData];
+    if(imageData!=nil)
+    [_vehicle setPicture:imageData];
     
-    vehicle.owner = _customer;
+    _vehicle.owner = _customer;
     
+    
+    NSError *error = nil;
+    
+    if (![[AppDelegate context] save:&error])
+        NSLog(@"Failed to add new vehicle with error: %@", [error domain]);
+
+    
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

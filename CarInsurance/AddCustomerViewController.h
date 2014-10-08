@@ -12,8 +12,9 @@
 #import "CoreDataHelper.h"
 #import "AppDelegate.h"
 #import "AddVehicleViewController.h"
+#import "VehicleCell.h"
 
-@interface AddCustomerViewController : UIViewController <UITextFieldDelegate>
+@interface AddCustomerViewController : UIViewController <UITextFieldDelegate,UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
@@ -26,6 +27,8 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (strong, nonatomic) IBOutlet UITableView *carDisplayTable;
+
+@property (strong, nonatomic) Customer *customer;
 
 
 @end
