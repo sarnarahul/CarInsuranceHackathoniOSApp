@@ -10,17 +10,27 @@ My myStonyGram iOS App taught me a lot of techniques to improve my code with lea
 
 With a good amount of experience in Core Data, I was able to code this for the 7 hour internship hackathon in 5 hours. 
 
+#Basic Table View to Display All Customers
 ![Alt text](/images/takePhoto1.png?raw=true)
+
+#Fields with keyboards customized according to the field selected
 ![Alt text](/images/takePhoto2.png?raw=true)
 ![Alt text](/images/takePhoto3.png?raw=true)
 ![Alt text](/images/takePhoto4.png?raw=true)
-![Alt text](/images/takePhoto5.png?raw=true)
 ![Alt text](/images/takePhoto6.png?raw=true)
+![Alt text](/images/takePhoto14.png?raw=true)
+
+#Add Vehicle to the Customer Profile
+![Alt text](/images/takePhoto5.png?raw=true)
 ![Alt text](/images/takePhoto7.png?raw=true)
 ![Alt text](/images/takePhoto8.png?raw=true)
 ![Alt text](/images/takePhoto9.png?raw=true)
 ![Alt text](/images/takePhoto10.png?raw=true)
+
+#Profile View
 ![Alt text](/images/takePhoto11.png?raw=true)
+
+#Customer List View to View Profile again and Swipe to Delete Option
 ![Alt text](/images/takePhoto12.png?raw=true)
 ![Alt text](/images/takePhoto13.png?raw=true)
 ![Alt text](/images/takePhoto14.png?raw=true)
