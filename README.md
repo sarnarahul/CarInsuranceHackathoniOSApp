@@ -18,7 +18,7 @@ With a good amount of experience in Core Data, I was able to code this for the 7
 ![Alt text](/images/takePhoto3.png?raw=true)
 ![Alt text](/images/takePhoto4.png?raw=true)
 ![Alt text](/images/takePhoto6.png?raw=true)
-![Alt text](/images/takePhoto14.png?raw=true)
+![Alt text](/images/takePhoto13.png?raw=true)
 
 #Add Vehicle to the Customer Profile
 ![Alt text](/images/takePhoto5.png?raw=true)
@@ -30,7 +30,7 @@ With a good amount of experience in Core Data, I was able to code this for the 7
 #Profile View
 ![Alt text](/images/takePhoto11.png?raw=true)
 
-#Customer List View to View Profile again and Swipe to Delete Option
+#Customer List View to View Profile again for edits and Swipe to Delete Option
 ![Alt text](/images/takePhoto12.png?raw=true)
 ![Alt text](/images/takePhoto13.png?raw=true)
 ![Alt text](/images/takePhoto14.png?raw=true)
