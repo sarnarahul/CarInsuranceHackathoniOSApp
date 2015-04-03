@@ -1,4 +1,4 @@
-# Generic Car Insurance App for Intership Position at Stony Brook's R&D Park
+# Generic Car Insurance App for Internship Position at Stony Brook's R&D Park
 
 According to the given specifications for the App,
 
